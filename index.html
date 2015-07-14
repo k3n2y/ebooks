@@ -2,4 +2,65 @@
 layout: default
 title: test title
 ---
-<p>this is the frist page in github</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直导航</title>
+    <!--<link type="text/css" href="wp.css" rel="stylesheet">-->
+	<style>
+	*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family:"open sans",sans-serif;   规定元素的字体系列。
+    font-size:14px; 字号14px;
+    line-height:1.4pm; 行高
+    min-width:600px;
+
+}
+.o{
+    position:relative; 相对定位 
+    float:left; 浮动靠左
+    margin:100px 50px;  上右下左
+    width:160px;
+    background-color:#222;
+
+}
+.n{
+    clear:left;
+    margin:12px 0;
+    list-style:none;清除 ul前面的.
+    background-color:#222;
+}
+.e{
+    min-height:34px;
+    cursor:pointer; 鼠标移动这里时 变成手势
+}
+.e a{
+    padding:10px 0;
+    display:block; 块状显示
+    color:#ffffff;
+    text-decoration:none;  属性规定添加到文本的修饰。
+    text-indent:60px; 属性规定文本块中首行文本的缩进。
+}
+a:hover{
+    background-color:#000;
+    color:cyan;
+}
+	</style>
+</head>
+<body>
+   <div class="o">
+<ul class="n">
+    <li class="e"><a href="#">主页</a></li>
+    <li class="e"><a href="#">相册</a></li>
+     <li class="e"><a href="#">说说</a></li>
+     <li class="e"><a href="#">关于我</a></li>
+     <li class="e"><a href="#">分享</a></li>
+</ul>
+  </div>
+    
+</body>
+</html>
